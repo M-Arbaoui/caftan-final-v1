@@ -61,7 +61,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// YAQOUT Brand Colors
+				ivory: 'hsl(var(--ivory))',
+				sand: 'hsl(var(--sand))',
+				'soft-gold': 'hsl(var(--soft-gold))',
+				'deep-ruby': 'hsl(var(--deep-ruby))',
+				emerald: 'hsl(var(--emerald))',
+				'warm-charcoal': 'hsl(var(--warm-charcoal))',
+			},
+			fontFamily: {
+				'display': ['Playfair Display', 'serif'],
+				'body': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
