@@ -6,71 +6,71 @@ import Footer from '@/components/Footer';
 const Shop = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const categories = ['All', 'Caftans', 'Jellabas', 'Dresses'];
+  const categories = ['All', 'Traditional', 'Modern', 'Luxury'];
 
   const products = [
     {
       id: 1,
       name: 'Ivory Silk Caftan',
       price: 450,
-      category: 'Caftans',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=500&fit=crop',
+      category: 'Traditional',
+      image: '/images/قفطان مغربي 😍🇲🇦Moroccan Luxury Kaftan.jpeg',
     },
     {
       id: 2,
-      name: 'Ruby Heritage Dress',
+      name: 'Ruby Heritage Caftan',
       price: 380,
-      category: 'Dresses',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=500&fit=crop',
+      category: 'Luxury',
+      image: '/images/𝐌𝐨𝐫𝐨𝐜𝐜𝐚𝐧 𝐂𝐚𝐟𝐭𝐚𝐧 __🇲🇦.jpeg',
     },
     {
       id: 3,
-      name: 'Sand Jellaba',
+      name: 'Sand Silk Caftan',
       price: 320,
-      category: 'Jellabas',
-      image: 'https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=400&h=500&fit=crop',
+      category: 'Modern',
+      image: '/images/Maryamacouture&art _ Caftan ⚜️ ⚜️Pièce unique ⚜️….jpeg',
     },
     {
       id: 4,
       name: 'Emerald Caftan',
       price: 520,
-      category: 'Caftans',
-      image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=400&h=500&fit=crop',
+      category: 'Luxury',
+      image: '/images/🇲🇦.jpeg',
     },
     {
       id: 5,
-      name: 'Gold Thread Dress',
+      name: 'Gold Thread Caftan',
       price: 450,
-      category: 'Dresses',
-      image: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=500&fit=crop',
+      category: 'Traditional',
+      image: '/images/🇲🇦✨.jpeg',
     },
     {
       id: 6,
-      name: 'Traditional Jellaba',
+      name: 'Traditional Blue Caftan',
       price: 290,
-      category: 'Jellabas',
-      image: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=400&h=500&fit=crop',
+      category: 'Traditional',
+      image: '/images/fba750d8-0905-41ff-8c09-97c607b95d81.jpeg',
     },
     {
       id: 7,
       name: 'Royal Blue Caftan',
       price: 480,
-      category: 'Caftans',
-      image: 'https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?w=400&h=500&fit=crop',
+      category: 'Luxury',
+      image: '/images/47c04834-8013-4fcd-b61c-8b697df5be7b.jpeg',
     },
     {
       id: 8,
-      name: 'Desert Rose Dress',
+      name: 'Desert Rose Caftan',
       price: 390,
-      category: 'Dresses',
-      image: 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=400&h=500&fit=crop',
+      category: 'Modern',
+      image: '/images/Piece of chocolate 🍫🤎 Model @ahlam_elmaaizi….jpeg',
     },
     {
       id: 9,
-      name: 'Midnight Jellaba',
+      name: 'Midnight Caftan',
       price: 340,
-      category: 'Jellabas',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=500&fit=crop',
+      category: 'Modern',
+      image: '/images/🌟.jpeg',
     },
   ];
 
@@ -86,9 +86,9 @@ const Shop = () => {
       <section className="pt-24 pb-12 bg-background">
         <div className="container-luxury">
           <div className="text-center">
-            <h1 className="text-hero mb-4">Our Collection</h1>
+            <h1 className="text-hero mb-4">Our Caftan Collection</h1>
             <p className="text-subtitle max-w-2xl mx-auto">
-              Discover handcrafted pieces that celebrate Moroccan heritage with contemporary elegance
+              Discover handcrafted Moroccan caftans that celebrate heritage with contemporary elegance
             </p>
           </div>
         </div>

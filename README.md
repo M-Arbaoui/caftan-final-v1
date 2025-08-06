@@ -1,73 +1,191 @@
-# Welcome to your Lovable project
+# YAQOUT - Timeless Moroccan Caftans
 
-## Project info
+A luxury Moroccan caftan e-commerce website built with React, TypeScript, and Tailwind CSS. Showcasing handcrafted Moroccan caftans where heritage meets haute couture.
 
-**URL**: https://lovable.dev/projects/dc423a43-08dd-499e-bd45-d25523d940d1
+## 🌟 Features
 
-## How can I edit this code?
+- **Luxury Design**: Elegant Moroccan-inspired design with gold accents
+- **Responsive**: Perfect experience on desktop, tablet, and mobile
+- **Performance Optimized**: Fast loading with lazy loading and optimizations
+- **SEO Ready**: Complete meta tags and structured data
+- **Smooth Animations**: Beautiful micro-interactions and transitions
+- **Loading States**: Elegant loading animations with progress indicators
 
-There are several ways of editing your application.
+## 🎨 Design System
 
-**Use Lovable**
+### Color Palette
+- **Ivory**: `#faf9f6` - Clean backgrounds
+- **Sand**: `#e6d7b8` - Warm accents
+- **Soft Gold**: `#d4af37` - Luxury highlights
+- **Deep Ruby**: `#c53030` - Primary brand color
+- **Emerald**: `#2d4630` - Rich accents
+- **Warm Charcoal**: `#1a1a1a` - Text and dark elements
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dc423a43-08dd-499e-bd45-d25523d940d1) and start prompting.
+### Typography
+- **Display Font**: Cormorant Garamond (elegant headings)
+- **Body Font**: Inter (clean, readable text)
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Tech Stack
 
-**Use your preferred IDE**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Routing**: React Router DOM
+- **Build Tool**: Vite
+- **Deployment**: Vercel
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/caftan-final-v1.git
+   cd caftan-final-v1
+   ```
 
-Follow these steps:
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🏗️ Project Structure
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Header.tsx      # Navigation header
+│   ├── Footer.tsx      # Site footer
+│   ├── LoadingSpinner.tsx
+│   └── PageLoader.tsx
+├── pages/              # Page components
+│   ├── Index.tsx       # Home page
+│   ├── Shop.tsx        # Shop page
+│   ├── About.tsx       # About page
+│   ├── Contact.tsx     # Contact page
+│   └── NotFound.tsx    # 404 page
+├── App.tsx             # Main app component
+├── main.tsx           # Entry point
+└── index.css          # Global styles
 ```
 
-**Edit a file directly in GitHub**
+## 🎯 Key Components
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### LoadingSpinner
+Beautiful Moroccan-inspired loading animation with customizable sizes and colors.
 
-**Use GitHub Codespaces**
+### PageLoader
+Full-screen loading experience with progress bar and brand elements.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Header
+Dynamic navigation that adapts to scroll position and page context.
 
-## What technologies are used for this project?
+## 🌐 Deployment
 
-This project is built with:
+### Vercel Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. **Connect to GitHub**
+   - Push your code to GitHub
+   - Connect your repository to Vercel
 
-## How can I deploy this project?
+2. **Configure Build Settings**
+   - **Framework Preset**: Vite
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
+   - **Install Command**: `npm install`
 
-Simply open [Lovable](https://lovable.dev/projects/dc423a43-08dd-499e-bd45-d25523d940d1) and click on Share -> Publish.
+3. **Environment Variables** (if needed)
+   - Add any environment variables in Vercel dashboard
 
-## Can I connect a custom domain to my Lovable project?
+4. **Deploy**
+   - Vercel will automatically deploy on every push to main branch
 
-Yes, you can!
+### Manual Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```bash
+# Build the project
+npm run build
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Deploy to Vercel
+npx vercel --prod
+```
+
+## 📱 Responsive Design
+
+The website is fully responsive with breakpoints:
+- **Mobile**: < 640px
+- **Tablet**: 640px - 1024px
+- **Desktop**: > 1024px
+
+## 🎨 Customization
+
+### Colors
+Update colors in `tailwind.config.ts` and `src/index.css`
+
+### Fonts
+Modify font imports in `src/index.css`
+
+### Animations
+Custom animations are defined in `src/index.css`
+
+## 📄 Pages
+
+### Home Page (`/`)
+- Hero section with caftan showcase
+- Featured categories
+- Brand story
+- Customer testimonials
+- Contact information
+- Newsletter signup
+
+### Shop Page (`/shop`)
+- Product grid with filtering
+- Category navigation
+- Product details
+
+### About Page (`/about`)
+- Brand story and heritage
+- Mission and values
+
+### Contact Page (`/contact`)
+- Contact form
+- Business information
+- WhatsApp integration
+
+## 🔧 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+### Code Style
+
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Functional components with hooks
+- Consistent naming conventions
+
+## 📞 Contact
+
+- **WhatsApp**: +212 677 196 185
+- **Email**: contact@yaqout.com
+- **Location**: Morocco
+
+## 📄 License
+
+This project is proprietary and confidential. All rights reserved.
+
+---
+
+**YAQOUT** - Where Moroccan heritage meets modern elegance ✨

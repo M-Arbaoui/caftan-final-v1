@@ -1,24 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logos/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YAQOUT - Timeless Moroccan Elegance</title>
-    <meta name="description" content="Luxury Moroccan fashion brand offering handcrafted caftans, jellabas, and heritage dresses. Where tradition meets contemporary elegance." />
-    <meta name="author" content="YAQOUT" />
-
-    <meta property="og:title" content="YAQOUT - Timeless Moroccan Elegance" />
-    <meta property="og:description" content="Luxury Moroccan fashion brand offering handcrafted caftans, jellabas, and heritage dresses. Where tradition meets contemporary elegance." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>YAQOUT - Timeless Moroccan Caftans | Handcrafted Luxury</title>
+    <meta name="title" content="YAQOUT - Timeless Moroccan Caftans | Handcrafted Luxury">
+    <meta name="description" content="Discover handcrafted Moroccan caftans where heritage meets haute couture. Traditional embroidery, modern elegance. Shop authentic Moroccan caftans for special occasions.">
+    <meta name="keywords" content="Moroccan caftans, traditional caftans, luxury caftans, handcrafted caftans, Moroccan fashion, wedding caftans, elegant caftans, YAQOUT">
+    <meta name="author" content="YAQOUT">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yaqout.com/">
+    <meta property="og:title" content="YAQOUT - Timeless Moroccan Caftans | Handcrafted Luxury">
+    <meta property="og:description" content="Discover handcrafted Moroccan caftans where heritage meets haute couture. Traditional embroidery, modern elegance.">
+    <meta property="og:image" content="/images/hero-caftan.jpg.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="YAQOUT">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yaqout.com/">
+    <meta property="twitter:title" content="YAQOUT - Timeless Moroccan Caftans | Handcrafted Luxury">
+    <meta property="twitter:description" content="Discover handcrafted Moroccan caftans where heritage meets haute couture. Traditional embroidery, modern elegance.">
+    <meta property="twitter:image" content="/images/hero-caftan.jpg.jpeg">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#c53030">
+    <meta name="msapplication-TileColor" content="#c53030">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="YAQOUT">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yaqout.com/">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/logos/logo.png" as="image">
+    <link rel="preload" href="/images/hero-caftan.jpg.jpeg" as="image">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "YAQOUT",
+      "url": "https://yaqout.com",
+      "logo": "https://yaqout.com/logos/logo.png",
+      "description": "Handcrafted Moroccan caftans where heritage meets haute couture",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MA",
+        "addressRegion": "Morocco"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+212-677-196-185",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Arabic", "French"]
+      },
+      "sameAs": [
+        "https://wa.me/212677196185"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "YAQOUT",
+      "url": "https://yaqout.com",
+      "description": "Timeless Moroccan caftans - handcrafted luxury for the modern woman",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yaqout.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Store",
+      "name": "YAQOUT",
+      "description": "Luxury Moroccan caftan boutique",
+      "url": "https://yaqout.com",
+      "telephone": "+212-677-196-185",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MA"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "USD, EUR, MAD",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+      "openingHours": "Mo-Su 09:00-18:00"
+    }
+    </script>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Performance Monitoring -->
+    <script>
+      // Performance monitoring
+      window.addEventListener('load', function() {
+        if ('performance' in window) {
+          const perfData = performance.getEntriesByType('navigation')[0];
+          console.log('Page Load Time:', perfData.loadEventEnd - perfData.loadEventStart, 'ms');
+        }
+      });
+      
+      // Service Worker registration for PWA capabilities
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('SW registered: ', registration);
+            })
+            .catch(function(registrationError) {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
